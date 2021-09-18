@@ -1,0 +1,41 @@
+QUESTION 1
+@Query("SELECT * FROM Student")
+    fun getAllStudents(): LiveData<List<student>>
+
+QUESTION 2
+ @Query("SELECT * FROM Student WHERE name=Name")
+    fun getStudentName(Name: String): LiveData<Name>
+
+QUESTION 3
+  SELECT DISTINCT unique_town 
+	FROM student;
+
+QUESTION 4
+ @Query("SELECT * FROM StudentTown r")
+    fun getAllTown(r)
+
+Question 5:
+    SELECT * FROM STUDENTS WHERE MARKS >85;
+
+QUESTION 6
+  SELECT DISTINCT over 85 marks 
+	FROM student;
+
+QUESTION 6
+  SELECT DISTINCT ascending_order
+	FROM student;
+
+Question 7:
+    SELECT * FROM STUDENTS WHERE TOWN="Lodwar" AND marks > 80;
+
+
+QUESTION 8
+SELECT Name FROM Students WHERE TotalMarks > (SELECT AVG(TotalMarks) FROM Students);
+
+QUESTION 9
+SELECT names
+FROM Student
+ORDER BY last_name DESC;
+
+Question 10:
+    SELECT * FROM STUDENTS WHERE town NOT='Nairobi' AND MARKS >80;
